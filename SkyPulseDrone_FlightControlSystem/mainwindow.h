@@ -2,6 +2,9 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QThread>
+
+#include "sensormanager.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -17,5 +20,7 @@ public:
 
 private:
     Ui::MainWindow *ui;
+
+    SensorManager *sensor_manager;
 };
 #endif // MAINWINDOW_H
