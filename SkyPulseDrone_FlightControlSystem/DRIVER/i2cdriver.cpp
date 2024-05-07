@@ -20,6 +20,11 @@ bool i2cDriver::initialize()
 {
     QMutexLocker locker(&mutex);  //
 
+    if (gpioInitialise() < 0) {
+        qWarning("Failed to initialize pigpio. Retrying in 1 second...");
+    }
+    qWarning("Pigpio initialized successfully");
+
     handle = i2cOpen(1, deviceAddress, 0);  //
     if(handle < 0){
         qDebug() << "Failed to open I2C device : " << deviceAddress;

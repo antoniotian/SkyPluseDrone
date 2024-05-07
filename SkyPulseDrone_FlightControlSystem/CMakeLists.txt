@@ -32,6 +32,8 @@ set(PROJECT_SOURCES
         mainwindow.ui
 
         DRIVER/i2cdriver.h DRIVER/i2cdriver.cpp
+        SENSOR/mpu6050.h SENSOR/mpu6050.cpp
+        SYSTEM/sensormanager.h SYSTEM/sensormanager.cpp
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
