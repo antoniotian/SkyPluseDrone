@@ -10,17 +10,51 @@ class MPU6050 : public QObject
     Q_OBJECT
 
 public:
+    /**
+     * @brief MPU6050
+     * @param i2cAddress
+     * @param parent
+     */
     explicit MPU6050(quint8 i2cAddress = 0x68, QObject *parent = nullptr);
-//    bool calibrateGyro();
-//    bool calbrateAccel();
-//    bool readAllSensors(float &ax, float &ay, float &az, float &gx, float &gy, float &gz);
-//    bool readBytes(quint8 reg, quint8 *buffer, size_t length);
+
+    /**
+     * @brief initialize
+     * @return
+     */
+    bool initialize();
+
+    /**
+     * @brief calibration
+     * @return
+     */
+    void calibration();
+
+    /**
+     * @brief readAllSensors
+     * @param ax
+     * @param ay
+     * @param az
+     * @param gx
+     * @param gy
+     * @param gz
+     * @return
+     */
+    void readAllSensors(float &ax, float &ay, float &az, float &gx, float &gy, float &gz);
+
+    /**
+     * @brief readBytes
+     * @param reg
+     * @param buffer
+     * @param length
+     * @return
+     */
+    bool readBytes(quint8 reg, quint8 *buffer, size_t length);
 
 public slots:
-//    bool readAllReg();
+    void readAllReg();
 
 private:
-    i2cDriver *I2CDriver;
+    I2CDevice *i2cDevice;
 
     // Calibration offsets
     float gyroOffset[3]  = {0, 0, 0};
@@ -34,12 +68,21 @@ private:
     static constexpr float   ACCEL_FS_SEL_2G    = 16384.0;
     static constexpr float   GYRO_FS_SEL_250DEG = 131.0;
 
-    bool initialize();
-//    void collectSensorDataForCalibration();
-//    void applyCalibration(float &ax, float &ay, float &az, float &gx, float &gy, float &gz);
+    /**
+     * @brief collectCalibrationData
+     */
+    void collectCalibrationData();
 
-signals:
-
+    /**
+     * @brief applyCalibration
+     * @param ax
+     * @param ay
+     * @param az
+     * @param gx
+     * @param gy
+     * @param gz
+     */
+    void applyCalibration(float &ax, float &ay, float &az, float &gx, float &gy, float &gz);
 };
 
 #endif // MPU6050_H
