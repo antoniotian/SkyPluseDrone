@@ -24,14 +24,14 @@ void SensorManager::ReadAllSensorData()
 {
     QtConcurrent::run([this]() {
         qDebug() << "Starting sensor read operation in a separate thread" << QThread::currentThreadId();
-        float ax, ay, az, gx, gy, gz, temperture, pressure, mx, my, mz, headingDeg;
+        float ax, ay, az, gx, gy, gz, temperature, pressure, mx, my, mz, headingDeg;
 
         MPU6050_HANDLE->readAllSensors(ax, ay, az, gx, gy, gz);
-        BMP180_HANDLE->readTemperature(temperture);
+        BMP180_HANDLE->readTemperature(temperature);
         BMP180_HANDLE->readPressure(pressure);
         QMC5883_HANDLE->readRawData(mx, my, mz, headingDeg);
 
-        QVector<float> AccGyr = {ax, ay, az, gx, gy, gz, mx, my, mz, headingDeg, pressure, temperture};
+        QVector<float> AccGyr = {ax, ay, az, gx, gy, gz, mx, my, mz, headingDeg, pressure, temperature};
         packageAndSendSensorData(AccGyr);
         emit updateSensorData(AccGyr);
     });
