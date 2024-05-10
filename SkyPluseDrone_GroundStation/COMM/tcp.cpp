@@ -54,7 +54,6 @@ void TCP::sendMessage(const QByteArray &message)
 void TCP::readMessage()
 {
     QByteArray data = TCPSocket->readAll();
-    qDebug() << "TCP Thread ID: " << QThread::currentThreadId();
     dataDecoder(data);
 }
 
@@ -97,7 +96,7 @@ void TCP::dataDecoder(const QByteArray &data_to_decode)
         }
 
         QStringList dataList;
-        dataList.reserve(12); // 优化点：预分配QStringList的大小
+        dataList.reserve(12);
         dataList << QString::number(ax, 'f', 2) << QString::number(ay, 'f', 2) << QString::number(az, 'f', 2)
                  << QString::number(gx, 'f', 2) << QString::number(gy, 'f', 2) << QString::number(gz, 'f', 2)
                  << QString::number(mx, 'f', 2) << QString::number(my, 'f', 2) << QString::number(mz, 'f', 2)

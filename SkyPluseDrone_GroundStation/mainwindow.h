@@ -44,6 +44,7 @@ private:
     TCP *TCPServer;
     UDP *UDPServer;
 
+    void cleanUI();
 
 private slots:
     void on_pushButton_Connect_clicked();

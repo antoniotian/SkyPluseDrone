@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>672</width>
-    <height>450</height>
+    <width>827</width>
+    <height>612</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -195,8 +195,521 @@
         </property>
         <widget class="QWidget" name="tab_Flight_Control">
          <attribute name="title">
-          <string>Tab 1</string>
+          <string>Flight Control</string>
          </attribute>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="0" column="0">
+           <layout class="QVBoxLayout" name="verticalLayout_2" stretch="1,1">
+            <item>
+             <widget class="QGroupBox" name="groupBox_Flight_Status_Display">
+              <property name="title">
+               <string>Flight Status Display</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_5">
+               <item row="0" column="0">
+                <layout class="QHBoxLayout" name="horizontalLayout_21">
+                 <item>
+                  <widget class="QWidget" name="widget_3D_Display" native="true"/>
+                 </item>
+                 <item>
+                  <widget class="QWidget" name="widget_Gradienter" native="true"/>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_6" stretch="3,2,1">
+              <item>
+               <widget class="QTabWidget" name="tabWidget_Sensor_Display">
+                <property name="currentIndex">
+                 <number>1</number>
+                </property>
+                <widget class="QWidget" name="tab_Sensor_Data">
+                 <attribute name="title">
+                  <string>Sensor Data</string>
+                 </attribute>
+                 <layout class="QVBoxLayout" name="verticalLayout_8">
+                  <item>
+                   <layout class="QHBoxLayout" name="horizontalLayout_13">
+                    <item>
+                     <layout class="QVBoxLayout" name="verticalLayout_4">
+                      <item>
+                       <layout class="QHBoxLayout" name="horizontalLayout_7" stretch="1,2">
+                        <item>
+                         <widget class="QLabel" name="label_ACC_X">
+                          <property name="minimumSize">
+                           <size>
+                            <width>55</width>
+                            <height>0</height>
+                           </size>
+                          </property>
+                          <property name="text">
+                           <string>ACC-X</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QLineEdit" name="lineEdit_ACC_X">
+                          <property name="enabled">
+                           <bool>false</bool>
+                          </property>
+                          <property name="frame">
+                           <bool>true</bool>
+                          </property>
+                          <property name="readOnly">
+                           <bool>true</bool>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                      <item>
+                       <layout class="QHBoxLayout" name="horizontalLayout_8" stretch="1,2">
+                        <item>
+                         <widget class="QLabel" name="label_ACC_Y">
+                          <property name="minimumSize">
+                           <size>
+                            <width>55</width>
+                            <height>0</height>
+                           </size>
+                          </property>
+                          <property name="text">
+                           <string>ACC-X</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QLineEdit" name="lineEdit_ACC_Y">
+                          <property name="enabled">
+                           <bool>false</bool>
+                          </property>
+                          <property name="frame">
+                           <bool>true</bool>
+                          </property>
+                          <property name="readOnly">
+                           <bool>true</bool>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                      <item>
+                       <layout class="QHBoxLayout" name="horizontalLayout_9" stretch="1,2">
+                        <item>
+                         <widget class="QLabel" name="label_ACC_Z">
+                          <property name="minimumSize">
+                           <size>
+                            <width>55</width>
+                            <height>0</height>
+                           </size>
+                          </property>
+                          <property name="text">
+                           <string>ACC-X</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QLineEdit" name="lineEdit_ACC_Z">
+                          <property name="enabled">
+                           <bool>false</bool>
+                          </property>
+                          <property name="frame">
+                           <bool>true</bool>
+                          </property>
+                          <property name="readOnly">
+                           <bool>true</bool>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                     </layout>
+                    </item>
+                    <item>
+                     <spacer name="horizontalSpacer_2">
+                      <property name="orientation">
+                       <enum>Qt::Horizontal</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                       <size>
+                        <width>40</width>
+                        <height>20</height>
+                       </size>
+                      </property>
+                     </spacer>
+                    </item>
+                    <item>
+                     <layout class="QVBoxLayout" name="verticalLayout_5">
+                      <item>
+                       <layout class="QHBoxLayout" name="horizontalLayout_10" stretch="1,2">
+                        <item>
+                         <widget class="QLabel" name="label_GYR_X">
+                          <property name="minimumSize">
+                           <size>
+                            <width>55</width>
+                            <height>0</height>
+                           </size>
+                          </property>
+                          <property name="text">
+                           <string>GYR-X</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QLineEdit" name="lineEdit_GYR_X">
+                          <property name="enabled">
+                           <bool>false</bool>
+                          </property>
+                          <property name="frame">
+                           <bool>true</bool>
+                          </property>
+                          <property name="readOnly">
+                           <bool>true</bool>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                      <item>
+                       <layout class="QHBoxLayout" name="horizontalLayout_11" stretch="1,2">
+                        <item>
+                         <widget class="QLabel" name="label_GYR_Y">
+                          <property name="minimumSize">
+                           <size>
+                            <width>55</width>
+                            <height>0</height>
+                           </size>
+                          </property>
+                          <property name="text">
+                           <string>GYR-Y</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QLineEdit" name="lineEdit_GYR_Y">
+                          <property name="enabled">
+                           <bool>false</bool>
+                          </property>
+                          <property name="frame">
+                           <bool>true</bool>
+                          </property>
+                          <property name="readOnly">
+                           <bool>true</bool>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                      <item>
+                       <layout class="QHBoxLayout" name="horizontalLayout_12" stretch="1,2">
+                        <item>
+                         <widget class="QLabel" name="label_GYR_Z">
+                          <property name="minimumSize">
+                           <size>
+                            <width>55</width>
+                            <height>0</height>
+                           </size>
+                          </property>
+                          <property name="text">
+                           <string>GYR-Z</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QLineEdit" name="lineEdit_GYR_Z">
+                          <property name="enabled">
+                           <bool>false</bool>
+                          </property>
+                          <property name="frame">
+                           <bool>true</bool>
+                          </property>
+                          <property name="readOnly">
+                           <bool>true</bool>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                     </layout>
+                    </item>
+                   </layout>
+                  </item>
+                  <item>
+                   <layout class="QHBoxLayout" name="horizontalLayout_14">
+                    <item>
+                     <layout class="QVBoxLayout" name="verticalLayout_6">
+                      <item>
+                       <layout class="QHBoxLayout" name="horizontalLayout_15" stretch="1,2">
+                        <item>
+                         <widget class="QLabel" name="label_MAG_X">
+                          <property name="minimumSize">
+                           <size>
+                            <width>55</width>
+                            <height>0</height>
+                           </size>
+                          </property>
+                          <property name="text">
+                           <string>MAG-X</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QLineEdit" name="lineEdit_MAG_X">
+                          <property name="enabled">
+                           <bool>false</bool>
+                          </property>
+                          <property name="frame">
+                           <bool>true</bool>
+                          </property>
+                          <property name="readOnly">
+                           <bool>true</bool>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                      <item>
+                       <layout class="QHBoxLayout" name="horizontalLayout_16" stretch="1,2">
+                        <item>
+                         <widget class="QLabel" name="label_MAG_Y">
+                          <property name="minimumSize">
+                           <size>
+                            <width>55</width>
+                            <height>0</height>
+                           </size>
+                          </property>
+                          <property name="text">
+                           <string>MAG-Y</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QLineEdit" name="lineEdit_MAG_Y">
+                          <property name="enabled">
+                           <bool>false</bool>
+                          </property>
+                          <property name="frame">
+                           <bool>true</bool>
+                          </property>
+                          <property name="readOnly">
+                           <bool>true</bool>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                      <item>
+                       <layout class="QHBoxLayout" name="horizontalLayout_17" stretch="1,2">
+                        <item>
+                         <widget class="QLabel" name="label_MAG_Z">
+                          <property name="minimumSize">
+                           <size>
+                            <width>55</width>
+                            <height>0</height>
+                           </size>
+                          </property>
+                          <property name="text">
+                           <string>MAG-Z</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QLineEdit" name="lineEdit_MAG_Z">
+                          <property name="enabled">
+                           <bool>false</bool>
+                          </property>
+                          <property name="frame">
+                           <bool>true</bool>
+                          </property>
+                          <property name="readOnly">
+                           <bool>true</bool>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                     </layout>
+                    </item>
+                    <item>
+                     <spacer name="horizontalSpacer_3">
+                      <property name="orientation">
+                       <enum>Qt::Horizontal</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                       <size>
+                        <width>40</width>
+                        <height>20</height>
+                       </size>
+                      </property>
+                     </spacer>
+                    </item>
+                    <item>
+                     <layout class="QVBoxLayout" name="verticalLayout_7">
+                      <item>
+                       <layout class="QHBoxLayout" name="horizontalLayout_18" stretch="1,2">
+                        <item>
+                         <widget class="QLabel" name="label_Altitude">
+                          <property name="minimumSize">
+                           <size>
+                            <width>55</width>
+                            <height>0</height>
+                           </size>
+                          </property>
+                          <property name="text">
+                           <string>Altitude</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QLineEdit" name="lineEdit_Altitude">
+                          <property name="enabled">
+                           <bool>false</bool>
+                          </property>
+                          <property name="frame">
+                           <bool>true</bool>
+                          </property>
+                          <property name="readOnly">
+                           <bool>true</bool>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                      <item>
+                       <layout class="QHBoxLayout" name="horizontalLayout_19" stretch="1,2">
+                        <item>
+                         <widget class="QLabel" name="label_HeadDeg">
+                          <property name="minimumSize">
+                           <size>
+                            <width>55</width>
+                            <height>0</height>
+                           </size>
+                          </property>
+                          <property name="text">
+                           <string>HeadDeg</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QLineEdit" name="lineEdit_HeadDeg">
+                          <property name="enabled">
+                           <bool>false</bool>
+                          </property>
+                          <property name="frame">
+                           <bool>true</bool>
+                          </property>
+                          <property name="readOnly">
+                           <bool>true</bool>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                      <item>
+                       <layout class="QHBoxLayout" name="horizontalLayout_20" stretch="1,2">
+                        <item>
+                         <widget class="QLabel" name="label_Temp">
+                          <property name="minimumSize">
+                           <size>
+                            <width>55</width>
+                            <height>0</height>
+                           </size>
+                          </property>
+                          <property name="text">
+                           <string>Temp</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QLineEdit" name="lineEdit_Temp">
+                          <property name="enabled">
+                           <bool>false</bool>
+                          </property>
+                          <property name="frame">
+                           <bool>true</bool>
+                          </property>
+                          <property name="readOnly">
+                           <bool>true</bool>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                     </layout>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="QWidget" name="tab_Sensor_Chart">
+                 <attribute name="title">
+                  <string>Sensor Chart</string>
+                 </attribute>
+                 <layout class="QGridLayout" name="gridLayout_4">
+                  <item row="0" column="0">
+                   <widget class="QWidget" name="widget_Sensor_Chart" native="true"/>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <widget class="QGroupBox" name="groupBox_Flight_Posture_Control">
+                <property name="title">
+                 <string>Posture Panel</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QGroupBox" name="groupBox_2">
+                <property name="title">
+                 <string>Action</string>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_3">
+                 <item>
+                  <widget class="QPushButton" name="pushButton_Launch">
+                   <property name="text">
+                    <string>Launch</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="pushButton_TakeOff">
+                   <property name="text">
+                    <string>Take Off</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="pushButton_Langing">
+                   <property name="text">
+                    <string>Landing</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <spacer name="verticalSpacer">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>98</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+         </layout>
         </widget>
         <widget class="QWidget" name="tab_Parameter_Setting">
          <attribute name="title">
@@ -238,7 +751,7 @@
          <item row="0" column="0">
           <widget class="QProgressBar" name="progressBar">
            <property name="value">
-            <number>24</number>
+            <number>0</number>
            </property>
            <property name="textVisible">
             <bool>false</bool>
@@ -257,7 +770,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>672</width>
+     <width>827</width>
      <height>21</height>
     </rect>
    </property>

@@ -79,6 +79,7 @@ void MainWindow::onTCPStopSuccessful()
     ui->pushButton_Connect->setEnabled(true);
     ui->pushButton_Disconnect->setEnabled(false);
     ui->icon_TCP->setPixmap(QPixmap(":/icon/no.png"));
+    cleanUI();
 }
 
 void MainWindow::onTCPError()
@@ -112,5 +113,30 @@ void MainWindow::onUDPError()
 
 void MainWindow::updateUI(const QStringList &datalist)
 {
-    qDebug() << datalist;
+    QVector<QLineEdit*> Sensor_lineEdits {
+        ui->lineEdit_ACC_X, ui->lineEdit_ACC_Y, ui->lineEdit_ACC_Z,
+        ui->lineEdit_GYR_X, ui->lineEdit_GYR_Y, ui->lineEdit_GYR_Z,
+        ui->lineEdit_MAG_X, ui->lineEdit_MAG_Y, ui->lineEdit_MAG_Z,
+        ui->lineEdit_HeadDeg, ui->lineEdit_Altitude, ui->lineEdit_Temp
+    };
+
+    for (int i = 0; i < datalist.size(); i++)
+    {
+        Sensor_lineEdits[i]->setText(datalist.at(i));
+    }
+}
+
+void MainWindow::cleanUI()
+{
+    QVector<QLineEdit*> Sensor_lineEdits {
+        ui->lineEdit_ACC_X, ui->lineEdit_ACC_Y, ui->lineEdit_ACC_Z,
+        ui->lineEdit_GYR_X, ui->lineEdit_GYR_Y, ui->lineEdit_GYR_Z,
+        ui->lineEdit_MAG_X, ui->lineEdit_MAG_Y, ui->lineEdit_MAG_Z,
+        ui->lineEdit_HeadDeg, ui->lineEdit_Altitude, ui->lineEdit_Temp
+    };
+
+    for (int i = 0; i < Sensor_lineEdits.size(); i++)
+    {
+        Sensor_lineEdits[i]->clear();
+    }
 }

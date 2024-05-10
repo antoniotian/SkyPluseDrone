@@ -16,7 +16,6 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets Network PrintSupp
 include_directories(
     ${CMAKE_SOURCE_DIR}
     ${CMAKE_SOURCE_DIR}/COMM
-    ${CMAKE_SOURCE_DIR}/PLOTING
 )
 
 set(PROJECT_SOURCES
@@ -34,8 +33,6 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
 
         COMM/tcp.h COMM/tcp.cpp
         COMM/udp.h COMM/udp.cpp
-
-        PLOTING/qcustomplot.h PLOTING/qcustomplot.cpp
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET SkyPluseDrone_GroundStation APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
