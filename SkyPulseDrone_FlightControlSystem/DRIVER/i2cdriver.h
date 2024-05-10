@@ -20,7 +20,7 @@
  * includes read/write single byte, and read/write multiple bytes.
  *
  */
-class i2cDriver : public QObject
+class I2CDevice : public QObject
 {
     Q_OBJECT
 
@@ -31,14 +31,14 @@ public:
      * @param parent
      *
      */
-    explicit i2cDriver(int deviceAddress, QObject *parent = nullptr);
+    explicit I2CDevice(int deviceAddress, QObject *parent = nullptr);
 
     /**
      * @brief i2cDriver destructor
      * Release all i2c resources.
      *
      */
-    ~i2cDriver();
+    ~I2CDevice();
 
     /**
      * @brief initialize
@@ -49,14 +49,6 @@ public:
     bool initialize();
 
     /**
-     * @brief readBytes
-     * @param registerAddress
-     * @param count
-     * @return
-     */
-    QByteArray readBytes(quint8 registerAddress, quint8 count);
-
-    /**
      * @brief readByte
      * @param reg
      * @param value
@@ -65,12 +57,12 @@ public:
     bool readByte(quint8 reg, quint8 &value);
 
     /**
-     * @brief writeBytes
+     * @brief readBytes
      * @param registerAddress
-     * @param data
+     * @param count
      * @return
      */
-    bool writeBytes(quint8 registerAddress, const QByteArray &data);
+    QByteArray readBytes(quint8 registerAddress, quint8 count);
 
     /**
      * @brief writeByte
@@ -80,13 +72,18 @@ public:
      */
     bool writeByte(quint8 reg, quint8 value);
 
+    /**
+     * @brief writeBytes
+     * @param registerAddress
+     * @param data
+     * @return
+     */
+    bool writeBytes(quint8 registerAddress, const QByteArray &data);
+
 private:
     int deviceAddress;
-    int handle;
+    int handle;  // Handle returned by the i2cOpen function
     static QMutex mutex;
-
-signals:
-    void errorOccurred(const QString &message);
 
 };
 

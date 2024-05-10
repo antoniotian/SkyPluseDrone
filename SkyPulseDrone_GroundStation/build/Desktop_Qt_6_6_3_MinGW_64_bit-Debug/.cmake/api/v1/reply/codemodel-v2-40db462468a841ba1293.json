@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-f069a299f8a9b316a0eb.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "SkyPluseDrone_GroundStation",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "SkyPluseDrone_GroundStation::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-SkyPluseDrone_GroundStation-Debug-b529f1ec3dba7436e631.json",
+					"name" : "SkyPluseDrone_GroundStation",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "SkyPluseDrone_GroundStation_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-SkyPluseDrone_GroundStation_autogen-Debug-c18a7d6acf1d40ca31a2.json",
+					"name" : "SkyPluseDrone_GroundStation_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "SkyPluseDrone_GroundStation_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-SkyPluseDrone_GroundStation_autogen_timestamp_deps-Debug-29a8ae9dfcc0dec05ebc.json",
+					"name" : "SkyPluseDrone_GroundStation_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/Anton/OneDrive - University of Glasgow/Documents/GitHub_Antoniotian/SkyPulseDrone/SkyPluseDrone_GroundStation/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug",
+		"source" : "D:/Anton/OneDrive - University of Glasgow/Documents/GitHub_Antoniotian/SkyPulseDrone/SkyPluseDrone_GroundStation"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

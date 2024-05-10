@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_SkyPluseDrone_GroundStation_FILE D:/Anton/OneDrive - University of Glasgow/Documents/GitHub_Antoniotian/SkyPulseDrone/SkyPluseDrone_GroundStation/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/SkyPluseDrone_GroundStation.exe)
+set(__QT_DEPLOY_TARGET_SkyPluseDrone_GroundStation_RUNTIME_DLLS D:/Qt/6.7.0/mingw_64/bin/Qt6Network.dll;D:/Qt/6.7.0/mingw_64/bin/Qt6PrintSupport.dll;D:/Qt/6.7.0/mingw_64/bin/Qt6Widgets.dll;D:/Qt/6.7.0/mingw_64/bin/Qt6Gui.dll;D:/Qt/6.7.0/mingw_64/bin/Qt6Core.dll)
