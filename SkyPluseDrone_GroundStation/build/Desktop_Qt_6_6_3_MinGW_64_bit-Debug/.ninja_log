@@ -1,0 +1,13 @@
+# ninja log v5
+3	3177	7369927075262614	SkyPluseDrone_GroundStation_autogen/timestamp	47fa9778091b89b2
+3	3177	7369927075262614	SkyPluseDrone_GroundStation_autogen/mocs_compilation.cpp	47fa9778091b89b2
+3	3177	7369927075262614	D:/Anton/OneDrive - University of Glasgow/Documents/GitHub_Antoniotian/SkyPulseDrone/SkyPluseDrone_GroundStation/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/SkyPluseDrone_GroundStation_autogen/timestamp	47fa9778091b89b2
+3	3177	7369927075262614	D:/Anton/OneDrive - University of Glasgow/Documents/GitHub_Antoniotian/SkyPulseDrone/SkyPluseDrone_GroundStation/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/SkyPluseDrone_GroundStation_autogen/mocs_compilation.cpp	47fa9778091b89b2
+3178	3275	7369927077549079	SkyPluseDrone_GroundStation_autogen/EWIEGA46WW/qrc_resource.cpp	7f19e212c4ce81ad
+3178	3275	7369927077549079	D:/Anton/OneDrive - University of Glasgow/Documents/GitHub_Antoniotian/SkyPulseDrone/SkyPluseDrone_GroundStation/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/SkyPluseDrone_GroundStation_autogen/EWIEGA46WW/qrc_resource.cpp	7f19e212c4ce81ad
+3443	3664	7369927081475777	CMakeFiles/SkyPluseDrone_GroundStation.dir/5033313eec79880bc3493e7abdf5dc71/qrc_resource.cpp.obj	e49f7f1d6407fdca
+3338	5340	7369927098215770	CMakeFiles/SkyPluseDrone_GroundStation.dir/COMM/udp.cpp.obj	32f75885050acca5
+3308	7349	7369927118301099	CMakeFiles/SkyPluseDrone_GroundStation.dir/COMM/tcp.cpp.obj	fc5653f74d724c05
+3276	7479	7369927119616182	CMakeFiles/SkyPluseDrone_GroundStation.dir/main.cpp.obj	a4cbaca16fb38b66
+3312	7937	7369927124149883	CMakeFiles/SkyPluseDrone_GroundStation.dir/mainwindow.cpp.obj	5c9f4135b2a72257
+3304	16201	7369927206685819	CMakeFiles/SkyPluseDrone_GroundStation.dir/c7ac919e0ffa142d10f29b30676a83dd/mocs_compilation.cpp.obj	faf6188171781743
