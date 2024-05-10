@@ -1,0 +1,70 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-7c364837bf7991f08d55.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "SkyPulseDrone_FlightControlSystem",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "SkyPulseDrone_FlightControlSystem::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-SkyPulseDrone_FlightControlSystem-Debug-c1ae036a9b13cd0dcb37.json",
+					"name" : "SkyPulseDrone_FlightControlSystem",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "SkyPulseDrone_FlightControlSystem_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-SkyPulseDrone_FlightControlSystem_autogen-Debug-98712b0b94a3e7079754.json",
+					"name" : "SkyPulseDrone_FlightControlSystem_autogen",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/tony/GitHub/SkyPulseDrone",
+		"source" : "/home/tony/GitHub/SkyPulseDrone/SkyPulseDrone_FlightControlSystem"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}
