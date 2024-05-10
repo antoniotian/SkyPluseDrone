@@ -2,14 +2,13 @@
 #define TCP_H
 
 #include <QObject>
-#include <QVector>
+#include <QThread>
 #include <QTcpServer>
 #include <QTcpSocket>
-#include <QTimer>
-#include <QThread>
 #include <QHostAddress>
 #include <QThreadPool>
 #include <QDataStream>
+#include <QVector>
 #include <QDebug>
 
 class TCP : public QTcpServer

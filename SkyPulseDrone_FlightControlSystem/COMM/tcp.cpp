@@ -73,6 +73,7 @@ void TCP::sendMessage64Bytes(const QByteArray &datapackage_u64)
     broadcastMessage(messageToSend);
 }
 
+
 void TCP::broadcastMessage(const QByteArray &message)
 {
     // BroadcastMessage

@@ -37,6 +37,7 @@ void SensorManager::ReadAllSensorData()
     });
 }
 
+
 void SensorManager::packageAndSendSensorData(const QVector<float> &AccGry)
 {
     QByteArray buffer;

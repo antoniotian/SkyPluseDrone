@@ -3,6 +3,7 @@
 QMC5883::QMC5883(uint8_t i2cAddress, QObject *parent)
     : QObject(parent), i2cDevice(new I2CDevice(i2cAddress, this))
 {
+    qWarning("QMC5883 Initial");
     if (!i2cDevice->initialize()){
         qWarning("Failed to create I2C device for QMC5883");
         return;

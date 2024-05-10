@@ -16,7 +16,6 @@ BMP180::BMP180(uint8_t i2cAddress, QObject *parent)
     }
 }
 
-
 // Run calibration on initialisation and read calibration values
 bool BMP180::initialize()
 {
@@ -26,7 +25,6 @@ bool BMP180::initialize()
     startPressureMeasurement(OSS);
     return true;
 }
-
 
 bool BMP180::readCalibrationData()
 {
